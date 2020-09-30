@@ -1,36 +1,36 @@
-import {romantoInt, intToRoman, addRomanNumbers} from "../main"
+import {Add} from "../main"
 import { expect } from 'chai';
 
 describe('romantoInt Tests', () => {
-  it('IV should be 4', () => {
+  it('"" should be 0', () => {
     // given
-    const roman = 'IV';
-    const value = 4;
+    const num = '';
+    const value = 0;
 
     // when
-    const testvalue = romantoInt(roman);
+    const testvalue = Add(num);
 
     // then
     expect(testvalue).equal(value);
   });
 
-  it('XII should be 12', () => {
+  it('"1, 20" should be 21', () => {
     // given
-    const roman = 'XII';
-    const value = 12;
+    const num = '1, 20';
+    const value = 21;
 
     // when
-    const testvalue = romantoInt(roman);
+    const testvalue = Add(num);
 
     // then
     expect(testvalue).equal(value);
   });
 });
 
-describe('intToRoman Tests', () => {
+describe('xxx Tests', () => {
 
 });
 
-describe('addRomanNumbers Tests', () => {
+describe('yyy Tests', () => {
   
 });

@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   frontend:
-    container_name: roman-calculator-test
+    container_name: string-calculator-test
     build:
       context: .
       dockerfile: dockerfile

@@ -33,4 +33,4 @@ Then, open file 'project/coverage/index.html' in chrome. <br/>
 Sample output <br/> ![](test_output_coverage.jpg) <br/>
 
 # Problem description
-https://docs.google.com/document/d/1AcPP9WXEDbaBV7EOaAuCmBBzzkBYpNQu7j0pUr9efiA/edit#
+https://docs.google.com/document/d/1Ux-LIeDNMmgQEgLOd5d7gU3gdMVXGYP7BwiITAaJMPY/edit#
