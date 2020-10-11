@@ -1,7 +1,7 @@
 import {Add} from "../main"
 import { expect } from 'chai';
 
-describe('romantoInt Tests', () => {
+describe('Adding Tests', () => {
   it('"" should be 0', () => {
     // given
     const num = '';
@@ -25,42 +25,6 @@ describe('romantoInt Tests', () => {
     // then
     expect(testvalue).equal(value);
   });
-
-  // it('"-1, 345" should be 344', () => {
-  //   // given
-  //   const num = '-1, 345';
-  //   const value = 344;
-
-  //   // when
-  //   const testValue = Add(num);
-
-  //   // then
-  //   expect(testValue).equal(value);
-  // })
-
-  // it('"-1,-2" should be -3', () => {
-  //   // given
-  //   const num = '-1,-2';
-  //   const value = -3;
-
-  //   // when
-  //   const testValue = Add(num);
-
-  //   // then
-  //   expect(testValue).equal(value);
-  // })
-
-  // it('"10,11, -1, 0" should be 20', () => {
-  //   // given
-  //   const num = '10,11, -1, 0';
-  //   const value = 20;
-
-  //   // when
-  //   const testValue = Add(num);
-
-  //   // then
-  //   expect(testValue).equal(value);
-  // })
 
   it('"1\n2,3" should be 6', () => {
     // given
@@ -141,6 +105,18 @@ describe('romantoInt Tests', () => {
     expect(testValue).equal(value);
   })
   
+  it('//***\n1***2***3 should be 6', () => {
+    // given
+    const num = '//[***]\n1***2***3';
+    const value = 6;
+
+    // when
+    const testValue = Add(num);
+
+    // then
+    expect(testValue).equal(value);
+  })
+  
   it('//[***]\n1***2***3 should be 6', () => {
     // given
     const num = '//[***]\n1***2***3';
@@ -153,13 +129,17 @@ describe('romantoInt Tests', () => {
     expect(testValue).equal(value);
   }) 
 
+  it('//[***][;;]\n1***2;;3 should be 6', () => {
+    // given
+    const num = '//[***][;;]\n1***2;;3';
+    const value = 6;
 
-});
+    // when
+    const testValue = Add(num);
 
-describe('xxx Tests', () => {
+    // then
+    expect(testValue).equal(value);
+  }) 
 
-});
 
-describe('yyy Tests', () => {
-  
 });
